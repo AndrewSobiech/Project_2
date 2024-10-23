@@ -29,3 +29,4 @@ cd your-repo-name
 Ensure you have PostgreSQL installed and running.
 createdb emissions_data
 Create the Required Tables: You will need to create tables for co2_emissions, temperature_data, and population_data. Below is a sample structure for each:
+[https://github.com/AndrewSobiech/Project_2/blob/7af1d1033f4546974df93ca165466a631e29b135/Project/Emission_Data.sql]
