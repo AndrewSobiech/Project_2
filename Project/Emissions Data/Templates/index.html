@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizations - CO2 and Consumption Data</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- JS Files -->
+    <script src="{{ url_for('static', filename='js/visualization2.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/visualization3.js') }}" defer></script>
+</head>
+<body>
+
+    <!-- Tabs for switching between different visualizations -->
+    <ul class="nav nav-tabs" id="visualizationTabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="tab-1" data-toggle="tab" href="#temp-co2" role="tab" aria-controls="temp-co2" aria-selected="true">Temperature & CO2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="tab-2" data-toggle="tab" href="#consumption" role="tab" aria-controls="consumption" aria-selected="false">Consumption Rates</a>
+        </li>
+    </ul>
+
+    <!-- Tab contents -->
+    <div class="tab-content">
+        <!-- First tab: Temperature and CO2 -->
+        <div class="tab-pane fade show active" id="temp-co2" role="tabpanel" aria-labelledby="tab-1">
+            <h3>Filter by Country, Decade, and Temperature Unit</h3>
+            <!-- Dropdown for selecting the country -->
+            <label for="countrySelect">Select Country:</label>
+            <select id="countrySelect"></select>
+
+            <!-- Dropdown for selecting the decade -->
+            <label for="decadeSelect">Select Decade:</label>
+            <select id="decadeSelect"></select>
+
+            <!-- Dropdown for selecting temperature unit -->
+            <label for="tempUnitSelect">Select Unit:</label>
+            <select id="tempUnitSelect">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+            </select>
+
+            <!-- Heatmap Chart Container -->
+            <div id="heatmapChart" style="width: 100%; height: 500px;"></div>
+
+            <!-- Area Chart for CO2 Emissions -->
+            <div id="co2Chart" style="width: 100%; height: 400px;"></div>
+        </div>
+
+        <!-- Second tab: Consumption Rates -->
+        <div class="tab-pane fade" id="consumption" role="tabpanel" aria-labelledby="tab-2">
+            <h3>Consumption Rate by Continent and Country</h3>
+            <!-- Dropdown for selecting the continent -->
+            <label for="continentSelect">Select Continent:</label>
+            <select id="continentSelect"></select>
+
+            <!-- Stacked Bar Chart -->
+            <canvas id="consumptionChart" width="800" height="400"></canvas> 
+
+            <!-- Bar Chart for Consumption Data -->
+            <canvas id="consumptionChart" width="800" height="400"></canvas>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
