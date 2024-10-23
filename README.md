@@ -33,15 +33,15 @@ createdb emissions_data
 ([https://github.com/AndrewSobiech/Project_2/blob/7af1d1033f4546974df93ca165466a631e29b135/Project/Emission_Data.sql])
 
 2. For your sql tables to work, please create your table and then import the data using the following csv guide:
-co2_emissions = Formatted_Cleaned_Country_Lat_Long.csv
-coal_emissions = Matched_Country_Year.csv
-consumption_emissions = ReStandardized_Consumption_Emissions.csv
-country_lat_long = Standardized_CO2_Emissions.csv
-country_year = Standardized_Coal_Emissions.csv
-gas_emissions = Standardized_Gas_Emissions.csv
-oil_emissions = Standardized_Monthly_Temperature.csv
-population_data = Standardized_Oil_Emissions.csv
-temperature_data = Standardized_Population_Data.csv
+- co2_emissions = Formatted_Cleaned_Country_Lat_Long.csv
+- coal_emissions = Matched_Country_Year.csv
+- consumption_emissions = ReStandardized_Consumption_Emissions.csv
+- country_lat_long = Standardized_CO2_Emissions.csv
+- country_year = Standardized_Coal_Emissions.csv
+- gas_emissions = Standardized_Gas_Emissions.csv
+- oil_emissions = Standardized_Monthly_Temperature.csv
+- population_data = Standardized_Oil_Emissions.csv
+- temperature_data = Standardized_Population_Data.csv
 
 #### Step 5: Run Flask Application
 use the app.py to run the flask 
@@ -49,13 +49,15 @@ use the app.py to run the flask
 1. create a config file where you will provide the following information for the flask to run effectively:
 import os
 
-class Config:
+- class Config:
     DB_NAME = 'Emissions Data'
     DB_USER = 'your_username'
     DB_PASSWORD = 'your_password'
     DB_HOST = 'localhost'
     DB_PORT = '5432'
-2. Then run the Flask app using python app.py. Make sure the files and folders are in the same order structure as they appear in the Emissions Data folder. 
+  
+2. Then run the Flask app using python app.py. Make sure the files and folders are in the same order structure as they appear in the Emissions Data folder.
+   
 3. Open your browser to interact with the visuals. 
 
 ### Project Structure
