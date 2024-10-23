@@ -61,12 +61,12 @@ import os
 3. Open your browser to interact with the visuals. 
 
 ### Project Structure
-app.py: The main Flask application that serves data from the PostgreSQL database.
-static/js/visualization2.js: Handles the temperature and CO2 emissions visualizations using Plotly.
-static/js/visualization3.js: Handles the consumption stacked bar chart using Chart.js.
-templates/index.html: The main HTML file where the visualizations are rendered.
-Temperature & CO2 Heatmap: Choose a country and decade to explore how temperatures and CO2 emissions have changed over time.
-Consumption Stacked Bar Chart: Explore consumption rates of countries, grouped by continent, over multiple years.
+- app.py: The main Flask application that serves data from the PostgreSQL database.
+- static/js/visualization2.js: Handles the temperature and CO2 emissions visualizations using Plotly.
+- static/js/visualization3.js: Handles the consumption stacked bar chart using Chart.js.
+- templates/index.html: The main HTML file where the visualizations are rendered.
+- Temperature & CO2 Heatmap: Choose a country and decade to explore how temperatures and CO2 emissions have changed over time.
+- Consumption Stacked Bar Chart: Explore consumption rates of countries, grouped by continent, over multiple years.
 
 ### Works Cited 
 All data from: 
