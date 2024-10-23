@@ -28,5 +28,7 @@ cd your-repo-name
 #### Step 4: Set Up PostgreSQL Database
 Ensure you have PostgreSQL installed and running.
 createdb emissions_data
-Create the Required Tables: You will need to create tables for co2_emissions, temperature_data, and population_data. Below is a sample structure for each:
-[https://github.com/AndrewSobiech/Project_2/blob/7af1d1033f4546974df93ca165466a631e29b135/Project/Emission_Data.sql]
+
+1. Create the Required Tables: You will need to create tables for the database. Below is a sample structure for each please use the following script to create everything:
+([https://github.com/AndrewSobiech/Project_2/blob/7af1d1033f4546974df93ca165466a631e29b135/Project/Emission_Data.sql])
+2. 
