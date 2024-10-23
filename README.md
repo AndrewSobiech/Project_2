@@ -70,5 +70,5 @@ import os
 
 ### Works Cited 
 All data from: 
-Global Carbon Atlas. (10-16-2024). ‘Carbon emissions’. Retrieved October 23, 2024, from https://globalcarbonatlas.org/emissions/carbon-emissions/
-Our World in Data. (10-16-2024). ‘Monthly average surface temperatures by year’. Retrieved October 23, 2024, from https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year
+- Global Carbon Atlas. (10-16-2024). ‘Carbon emissions’. Retrieved October 23, 2024, from https://globalcarbonatlas.org/emissions/carbon-emissions/
+- Our World in Data. (10-16-2024). ‘Monthly average surface temperatures by year’. Retrieved October 23, 2024, from https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year
