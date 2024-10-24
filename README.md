@@ -25,7 +25,7 @@ Use Git to clone the repository to your local machine:
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 
-#### Step 4: Set Up PostgreSQL Database
+#### Step 2: Set Up PostgreSQL Database
 Ensure you have PostgreSQL installed and running.
 createdb emissions_data
 
@@ -43,7 +43,7 @@ createdb emissions_data
 - population_data = Standardized_Oil_Emissions.csv
 - temperature_data = Standardized_Population_Data.csv
 
-#### Step 5: Run Flask Application
+#### Step 3: Run Flask Application
 use the app.py to run the flask 
 
 1. create a config file where you will provide the following information for the flask to run effectively:
